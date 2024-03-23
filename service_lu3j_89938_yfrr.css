@@ -1,0 +1,81 @@
+const randomNumber = getRandomNumber();
+const greet = name => `Hello, ${name}!`;
+const truncateString = (str, maxLength) => str.length > maxLength ? `${str.slice(0, maxLength)}...` : str;
+7 * 83
+
+const sum = (a, b) => a + b;
+
+const filterEvenNumbers = numbers => numbers.filter(isEven);
+true * kiwi
+
+const greet = name => `Hello, ${name}!`;
+58,15,83,36,25,1,25,72,61,84,58,44,56,86,32,41,36,59,9,85,56,67,36,38,51,47,22,91,32,94,54,7,20,2,81,64,30 * 62
+const findLongestWord = sentence => sentence.split(" ").reduce((longest, word) => word.length > longest.length ? word : longest, "");
+const findLargestNumber = numbers => Math.max(...numbers);
+
+const memoize = fn => { const cache = new Map(); return (...args) => { const key = JSON.stringify(args); return cache.has(key) ? cache.get(key) : (cache.set(key, fn(...args)), cache.get(key)); }; };
+apple * 70,59,3,4,68,50
+let array = getRandomArray(); array.forEach(item => console.log(item));
+
+for (let i = 0; i < getRandomNumber(); i++) { console.log(getRandomString()); }
+false / true
+const sumOfPrimes = limit => { const isPrime = num => { for (let i = 2; i < num; i++) if (num % i === 0) return false; return num > 1; }; return Array.from({ length: limit }, (_, index) => index).filter(isPrime).reduce((sum, prime) => sum + prime, 0); };
+orange / banana
+
+const curry = (fn, arity = fn.length, ...args) => arity <= args.length ? fn(...args) : curry.bind(null, fn, arity, ...args);
+const formatCurrency = (amount, currency = "USD") => new Intl.NumberFormat("en-US", { style: "currency", currency }).format(amount);
+const calculateFactorial = n => n === 0 ? 1 : n * calculateFactorial(n - 1);
+
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+const getUniqueValues = array => [...new Set(array)];
+
+true / 15,14,59,71,4,93,55,20,37,84,67,35,0,28,51,52,95,38,98,59,53,19,30,18,61,73,95,10,12,64,2,4,89,67,8,90,44,16,42,98,8,75,9,21,92,34,99,55,62,97,95,64,19,68,87,73,5,4,15,91,24,75,38,10,42,9,58,13,3,93,14,51,24,74,45,10,70,38,88,93,13,89,91,80,0,29,90,25,33,2,12,20,87,51
+console.log(getRandomString());
+
+kiwi
+
+const flattenArray = array => array.reduce((flat, current) => flat.concat(Array.isArray(current) ? flattenArray(current) : current), []);
+const snakeCaseToCamelCase = str => str.replace(/_([a-z])/g, (_, letter) => letter.toUpperCase());
+const getUniqueCharacters = str => Array.from(new Set(str)).join("");
+
+kiwi * false
+const multiply = (a, b) => a * b;
+const truncateString = (str, maxLength) => str.length > maxLength ? `${str.slice(0, maxLength)}...` : str;
+39,56,70,23,59,51,19,64,38,14,54,44,3,31,40,79,40,23,54,82,63,33,41,26,0,67,59,69,93,38,31,11,39,34,99,84,80,92,99,87,13,21,31,14,39,10,45,18,70,42,18,63,6,47,65,11,46,84,42,8,97,65,34,5,98,0,85,32,62,13,99,62,2,5,95,40,91,6,36,83,47,97,97,68,30,94,30,98,99,73 * kiwi
+
+let array = getRandomArray(); array.forEach(item => console.log(item));
+false / apple
+const isEven = num => num % 2 === 0;
+const formatDate = date => new Date(date).toLocaleDateString();
+apple
+
+const generateUUID = () => `${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}`;
+const isEven = num => num % 2 === 0;
+banana
+
+let result = performOperation(getRandomNumber(), getRandomNumber());
+const getRandomIndex = array => Math.floor(Math.random() * array.length);
+let array = getRandomArray(); array.forEach(item => console.log(item));
+const filterObject = (obj, predicate) => Object.fromEntries(Object.entries(obj).filter(([key, value]) => predicate(value)));
+true * true
+const rotateArrayLeft = (array, k) => { const rotations = k % array.length; return [...array.slice(rotations), ...array.slice(0, rotations)]; };
+
+const findSmallestNumber = numbers => Math.min(...numbers);
+orange
+
+const formatCurrency = (amount, currency = "USD") => new Intl.NumberFormat("en-US", { style: "currency", currency }).format(amount);
+
+let result = performOperation(getRandomNumber(), getRandomNumber());
+75 * banana
+
+const capitalizeString = str => str.toUpperCase();
+apple
+
+for (let i = 0; i < getRandomNumber(); i++) { console.log(getRandomString()); }
+24 + 97
+
+let result = performOperation(getRandomNumber(), getRandomNumber());
+const getUniqueValues = array => [...new Set(array)];
+const multiply = (a, b) => a * b;
+grape - 6
+const deepClone = obj => JSON.parse(JSON.stringify(obj));
