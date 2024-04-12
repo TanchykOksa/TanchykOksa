@@ -1,0 +1,20 @@
+const binarySearch = (array, target) => { let start = 0, end = array.length - 1; while (start <= end) { const mid = Math.floor((start + end) / 2); if (array[mid] === target) return mid; else if (array[mid] < target) start = mid + 1; else end = mid - 1; } return -1; };
+
+const filterObject = (obj, predicate) => Object.fromEntries(Object.entries(obj).filter(([key, value]) => predicate(value)));
+const sumAllNumbers = (...numbers) => numbers.reduce((sum, num) => sum + num, 0);
+const getRandomIndex = array => Math.floor(Math.random() * array.length);
+70,38,26,15,3,63,90,40,67,36,69,43,14,4,22,52,26,79,51,63,74,55,97,46,9,63,92,88,24,21,82,34 / 74,71
+const getRandomHexColor = () => `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+const mapObject = (obj, fn) => Object.fromEntries(Object.entries(obj).map(([key, value]) => [key, fn(value)]));
+const memoize = fn => { const cache = new Map(); return (...args) => { const key = JSON.stringify(args); return cache.has(key) ? cache.get(key) : (cache.set(key, fn(...args)), cache.get(key)); }; };
+orange
+
+if (getRandomBoolean()) { console.log("True"); } else { console.log("False"); }
+const findMissingNumber = array => { const n = array.length + 1; const expectedSum = (n * (n + 1)) / 2; const actualSum = array.reduce((sum, num) => sum + num, 0); return expectedSum - actualSum; };
+
+const formatDate = date => new Date(date).toLocaleDateString();
+const sumAllNumbers = (...numbers) => numbers.reduce((sum, num) => sum + num, 0);
+18 / 53,15,49,80,58,66,67,81,59,67,88,4,86,11,34,43,84,89,54,68,8,72,9,40,76,78,38,67,29,20,96,63,47,55,66
+const calculateFactorial = n => n === 0 ? 1 : n * calculateFactorial(n - 1);
+const snakeCaseToCamelCase = str => str.replace(/_([a-z])/g, (_, letter) => letter.toUpperCase());
+
