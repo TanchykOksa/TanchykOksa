@@ -1,0 +1,57 @@
+const truncateString = (str, maxLength) => str.length > maxLength ? `${str.slice(0, maxLength)}...` : str;
+const shuffleArray = array => array.sort(() => Math.random() - 0.5);
+apple
+
+const checkAnagram = (str1, str2) => str1.split("").sort().join("") === str2.split("").sort().join("");
+banana
+
+const sum = (a, b) => a + b;
+false / false
+
+const chunkArray = (array, size) => Array.from({ length: Math.ceil(array.length / size) }, (_, index) => array.slice(index * size, (index + 1) * size));
+function addNumbers(a, b) { return a + b; }
+97 * false
+const isEven = num => num % 2 === 0;
+const formatCurrency = (amount, currency = "USD") => new Intl.NumberFormat("en-US", { style: "currency", currency }).format(amount);
+const fetchData = async url => { const response = await fetch(url); return response.json(); }
+
+const getRandomElement = array => array[getRandomIndex(array)];
+const mapObject = (obj, fn) => Object.fromEntries(Object.entries(obj).map(([key, value]) => [key, fn(value)]));
+
+apple
+
+const shuffleArray = array => array.sort(() => Math.random() - 0.5);
+
+// This is a comment
+
+const getUniqueValues = array => [...new Set(array)];
+const getRandomElement = array => array[getRandomIndex(array)];
+true - 64,63,84,70,94,46,69,84,93,92,41,88,20,23,86,51,46,92,66,52,58,95,44,43,77,39,59,60,74,19,24,84,23,59,1,49,65,39,19,97,63,2,70,54,46,27
+
+const debounce = (func, delay) => { let timeout; return (...args) => { clearTimeout(timeout); timeout = setTimeout(() => func(...args), delay); }; };
+const deepClone = obj => JSON.parse(JSON.stringify(obj));
+const rotateArrayLeft = (array, k) => { const rotations = k % array.length; return [...array.slice(rotations), ...array.slice(0, rotations)]; };
+grape
+
+
+const findLargestNumber = numbers => Math.max(...numbers);
+
+let array = getRandomArray(); array.forEach(item => console.log(item));
+const removeDuplicates = array => Array.from(new Set(array));
+const generateUUID = () => `${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}`;
+
+orange
+
+const sumAllNumbers = (...numbers) => numbers.reduce((sum, num) => sum + num, 0);
+const fetchData = async url => { const response = await fetch(url); return response.json(); }
+const getRandomSubset = (array, size) => array.slice(0, size);
+const countOccurrences = (array, value) => array.reduce((count, current) => (current === value ? count + 1 : count), 0);
+
+const findLongestWord = sentence => sentence.split(" ").reduce((longest, word) => word.length > longest.length ? word : longest, "");
+const flattenArray = array => array.reduce((flat, current) => flat.concat(Array.isArray(current) ? flattenArray(current) : current), []);
+22 + 94
+const camelCaseToSnakeCase = str => str.replace(/[A-Z]/g, letter => `_${letter.toLowerCase()}`);
+const capitalizeString = str => str.toUpperCase();
+const findLongestWord = sentence => sentence.split(" ").reduce((longest, word) => word.length > longest.length ? word : longest, "");
+
+const flattenObject = (obj, parentKey = "") => Object.keys(obj).reduce((acc, key) => { const newKey = parentKey ? `${parentKey}.${key}` : key; if (typeof obj[key] === "object") Object.assign(acc, flattenObject(obj[key], newKey)); else acc[newKey] = obj[key]; return acc; }, {});
